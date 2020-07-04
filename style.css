@@ -73,8 +73,8 @@ body {
 }
 
 @font-face {
-    font-family: helvetica;
-    src: url('font/helvetica_light.ttf')
+    font-family: montserrat;
+    src: url('font/Montserrat-Light.ttf')
 }
 
 .name {
@@ -84,13 +84,13 @@ body {
 }
 
 .guest {
-    font-size: 19px;
-    font-family: fantasy;
+    font-size: 15px;
+    font-family: montserrat;
     color: #b81717;
 }
 
 .address {
-    font-family: helvetica;
+    font-family: montserrat;
     font-size: 13px;
     line-height: 2;
 }
