@@ -55,6 +55,12 @@ body {
     color: #ecd596
 }
 
+.guest {
+    font-size: 19px;
+    font-family: fantasy;
+    color: #b81717;
+}
+
 .address {
     font-family: helvetica;
     font-size: 13px;
@@ -70,6 +76,12 @@ body {
     .name {
         font-size: 65px;
     }
+
+
+    .guest {
+        font-size: 25px;
+    }
+
 }
 
 
