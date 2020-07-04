@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  wedding:
+    image: autobnb/wedding
+    environment:
+    - ENV=prod
+    networks:
+      - root_app-tier
+
+networks:
+  root_app-tier:
+    external: true
