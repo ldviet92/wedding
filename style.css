@@ -4,6 +4,7 @@ body {
     background-repeat: repeat-x;
     animation-name: show;
     animation-duration: 3s;
+    overflow: hidden;
 }
 
 @keyframes show {
@@ -40,8 +41,7 @@ body {
 
 .img-size {
     max-width: 570px;
-    max-height: 900px;
-
+    max-height: 100vh;
 }
 
 .img-vietnhung {
