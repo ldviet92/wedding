@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Wedding</title>
+</head>
+
+<body class="position-relative">
+    <div class="d-flex flex-column">
+        <div class="d-flex justify-content-center ">
+            <div class="d-flex flex-column img-size">
+                <img class="shadow w-100" src="images/vietnhung.jpg">
+                <!-- content -->
+                <div class="position-absolute content-invite img-size">
+                    <div class="p-3 mt-5 text-center">
+                        <h1 class="name">Viet and Nhung</h1>
+                        <div class="address d-flex flex-column mt-3">
+                            <span>INVITE </span>
+                            <span id="guest" style="font-size: 25px;font-family: fantasy;color: #b81717;">DUNG VÀ
+                                CHỒNG</span>
+                            <span>TO CELEBRATE THEIR MARRIAGE</span>
+                            <span id="time">17:00 TUESDAY, JULY 14TH, 2020</span>
+                            <span id="address">6 DEGREE RESTAURANT - 9th FLOOR, 189 NGHI TAM, YEN PHU, TAY HO,
+                                HANOI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/M0GeCYBxG24?autoplay=1&mute=1"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> -->
+    </div>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+        <div class="snowflake">
+            ❅
+        </div>
+        <div class="snowflake">
+            ❆
+        </div>
+        <div class="snowflake">
+            ❄
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+
+    <script>
+        let searchParams = new URLSearchParams(window.location.search)
+        let guest = searchParams.has('name') ? searchParams.get('name') : "BẠN VÀ NGƯỜI THƯƠNG"
+        let address_id = searchParams.has('address') ? searchParams.get('address') : "2"
+
+        $('#guest').text(guest)
+        address = "6 DEGREE RESTAURANT - 9th FLOOR, 189 NGHI TAM, YEN PHU, TAY HO, HANOI"
+        time = "17:00 TUESDAY, JULY 14TH, 2020"
+        if (address_id == "2") {
+            address = "HỘI TRƯỜNG A, TRUNG TÂM TIỆC CƯỚI HỒ CÔ TIÊN PALACE, TP. HẠ LONG, QUANG NINH"
+            time = "17:00 SATURDAY, JULY 11TH, 2020"
+        }
+        $('#address').text(address)
+        $('#time').text(time)
+    </script>
+</body>
+
+</html>
