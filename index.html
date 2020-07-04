@@ -25,8 +25,7 @@
                         <h1 class="name">Viet and Nhung</h1>
                         <div class="address d-flex flex-column mt-3">
                             <span>INVITE </span>
-                            <span class="guest" id="guest"
-                                style="font-size: 25px;font-family: fantasy;color: #b81717;">DUNG VÀ
+                            <span class="guest" id="guest">DUNG VÀ
                                 CHỒNG</span>
                             <span>TO CELEBRATE THEIR MARRIAGE</span>
                             <span id="time">17:00 TUESDAY, JULY 14TH, 2020</span>
@@ -37,8 +36,9 @@
                 </div>
             </div>
         </div>
-        <iframe src="https://www.nhaccuatui.com/lh/background/x8wF7bRhJnX9" width="1" height="1" frameborder="0"
-            allowfullscreen allow="autoplay"></iframe>
+        <audio id="myAudio">
+            <source src="audio/Boyzone - Every Day I Love You (Official Video).mp3" type="audio/mpeg">
+        </audio>
     </div>
 
     <div class="snowflakes" aria-hidden="true">
@@ -102,6 +102,14 @@
         }
         $('#address').text(address)
         $('#time').text(time)
+
+        window.onload = function () {
+
+        }
+        document.addEventListener("click", function () {
+            var x = document.getElementById("myAudio");
+            x.play();
+        });
     </script>
 </body>
 
